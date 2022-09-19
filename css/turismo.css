@@ -1,0 +1,30 @@
+#turismo {
+    text-align: center;
+}
+
+#turismo .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#turismo article {
+    margin: 15px;
+}
+
+#turismo img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (min-width:1024px) {
+    #turismo .contenedor {
+        width: 100%;
+    }
+
+    #bienvenidos p {
+        margin: 0 150px;
+    }
+}
