@@ -1,0 +1,115 @@
+main {
+    margin-top: 50px;
+}
+
+#login {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#login .contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 480px;
+}
+
+#login .op-activada, .op-desactivada {
+    margin: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 7px;
+}
+
+.op-activada{
+    border-bottom: #000 2px solid;
+    color: #000;
+}
+
+.op-desactivada{
+    border-bottom: rgb(141, 141, 141) 2px solid;
+    color:rgb(141, 141, 141);
+}
+
+.op-desactivada:hover{
+    border-bottom: #000 2px solid;
+    color: #000;
+}
+
+.clave-olvidada{
+    color: rgb(0, 172, 252);
+    font-size: 15px;
+    text-decoration: none;
+    float: left;
+    margin: 50px 45px;
+}
+
+.clave-olvidada:hover {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.input-1{
+    background-color: rgb(235, 235, 235);
+    border:rgb(235, 235, 235) 1px solid;
+    border-radius: 20px;
+    width: 400px;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 12px;
+}
+
+
+.login-boton-1{
+    color: #fff;
+    background-color:#3B8BFB;
+    border:#79AEFC;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 40px;
+    float: right;
+}
+
+.login-boton-1:hover{
+    background-color:#1774f7;
+}
+
+/*Recuperacion de cuenta*/
+
+#recuperacion {
+    text-align: center;
+}
+
+#recuperacion .contenedor{
+    width: 480px;
+}
+
+@media screen and (max-width:767px) {
+
+    #login .contenedor {
+        width: 80%;
+    }
+
+    #recuperacion .contenedor {
+        width: 90%;
+    }
+
+    .input-1 {
+        width: 90%;
+    }
+
+    #login .login-boton-1, #login .clave-olvidada {
+        float: none;
+        margin: 30px;
+    }
+
+    #login .op-activada, .op-desactivada {
+        margin: 10px;
+    }
+
+}

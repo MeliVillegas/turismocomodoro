@@ -1,0 +1,102 @@
+#agenda {
+    text-align: center;
+}
+
+#agenda .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#agenda .evento {
+    display: flex;
+    margin: 15px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.034);
+    text-decoration: none;
+    color: #000;
+}
+
+#agenda .evento:hover {
+    background: rgba(0, 0, 0, 0.13);
+}
+
+#agenda .informacion {
+    text-align: left;
+}
+
+#agenda h4 {
+    padding: 20px 20px 0 20px;
+}
+
+#agenda p {
+    padding: 0 40px 0 20px;
+}
+
+#agenda img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*Evento-Actualizacion pendiente*/
+
+#actualizacion {
+    text-align: center;
+}
+#actualizacion img {
+    width: 400px;
+}
+
+#actualizacion .contenedor {
+    width: 480px;
+    padding: 0 20px;
+}
+
+#actualizacion p {
+    margin-bottom: 40px;
+}
+
+#actualizacion a{
+    padding: 10px 15px;
+    background: #3B8BFB;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*Error*/
+
+
+
+@media screen and (max-width:767px) {
+
+    #agenda h4, #agenda p {
+        font-size: 70%;
+    } 
+
+    main {
+        min-height: 70vh;
+    }
+
+    #actualizacion .contenedor{
+        width: 90%;
+        margin: 0 20px;
+    }
+
+    #actualizacion h2 {
+        padding: 0;
+    }
+
+    #actualizacion p {
+        margin-bottom: 15px;
+    }
+
+    #actualizacion img {
+        width: 80%;
+    }
+
+}

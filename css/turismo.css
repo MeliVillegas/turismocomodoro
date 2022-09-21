@@ -8,8 +8,11 @@
     flex-wrap: wrap;
 }
 
-#turismo article {
+.turismo-seccion {
     margin: 15px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 20px;
 }
 
 #turismo img {
@@ -18,6 +21,9 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+/*Secciones Turismo*/
+
 
 @media (min-width:1024px) {
     #turismo .contenedor {

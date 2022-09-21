@@ -43,8 +43,8 @@
         font-size: 20px;
     }
 
-    #banner a {
-        
+    #banner a { 
+        display: none;
     }
 }
 

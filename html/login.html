@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo Comodoro Rivadavia</title>
+    <title>Registrarse</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontello_css/fontello-cee07476/css/fontello.css">
     <link rel="icon" href="./img/logo-modified.png">
@@ -17,43 +17,32 @@
             <label class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
                 <a href="../index.html">Home</a>
-                <a href="#">Turismo</a>
+                <a href="./turismo.html">Turismo</a>
                 <a href="./agenda.html">Agenda</a>
                 <a href="./sobre_nosotros.html">Sobre Nosotros</a>
-                <a href="./login.html">Ingresar</a>
+                <a href="#">Ingresar</a>
             </nav>
         </div>
     </header>
     <main>
-        <section id="banner">
-            <img src="../img/comodoro-rivadavia1.jpg.crdownload" alt="">
+        <section id="login">
             <div class="contenedor">
-                <h2>Una ciudad por descubrir...</h2>
-            </div>    
-        </section>
-        <section id="turismo">
-            <h2>Explora</h2>
-            <div class="contenedor">
-                <a class="turismo-seccion" href="evento.html">
-                    <img src="../img/ferroportuario-2.jpg" alt="">
-                    <h4>Museos y centros culturales</h4>
-                </a>
-                <a class="turismo-seccion" href="evento.html">
-                    <img src="../img/picada-de-mariscos-para.jpg" alt="">
-                    <h4>Gastronomía</h4>
-                </a>
-                <a class="turismo-seccion" href="evento.html">
-                    <img src="../img/costanera.jpg" alt="">
-                    <h4>Playas</h4>
-                </a>
-                <a class="turismo-seccion" href="evento.html">
-                    <img src="../img/parque-saavedra.jpg" alt="">
-                    <h4>Parques y campings</h4>
-                </a>
+                <div class="cont-form">
+                    <a href="#" class="op-activada">Registrarse </a>
+                    <a href="iniciar_sesion.html" class="op-desactivada">Iniciar Sesión</a>
+                    <form action="./error.html">
+                        <input type="text" name="nombre" required placeholder="Nombre" class="input-1">
+                        <input type="text" name="apellido" required placeholder="Apellido" class="input-1">
+                        <input type="email" name="correo" required placeholder="Correo electrónico" class="input-1">
+                        <input type="password" name="contraseña" required   placeholder="Contraseña" class="input-1">
+                        <br>
+                        <input type="submit" value="Ingresar" class="login-boton-1">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer-1">
         <div class="contenedor">
             <p class="copy">Melina A. Villegas &copy; 2022</p>
             <div class="social">

@@ -2,6 +2,9 @@
 @import url(menu.css);
 @import url(banner.css);
 @import url(turismo.css);
+@import url(login.css);
+@import url(sobre_nosotros.css);
+@import url(agenda.css);
 
 * {
     margin: 0;
@@ -17,7 +20,7 @@ header {
     width: 100%;
     height: 50px;
     background: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -70,8 +73,17 @@ section {
 /*Footer*/
 
 footer {
+    width: 100%;
     border-top: 1px solid #000;
     border-radius: 20px 20px;
+}
+
+#footer-1 {
+    width: 100%;
+    border-top: 1px solid #000;
+    border-radius: 20px 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 footer .contenedor {
@@ -105,6 +117,13 @@ footer .contenedor {
 
     #bienvenidos p {
         margin: 0 150px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    #ubicacion iframe {
+        height: 300px;
     }
 }
 

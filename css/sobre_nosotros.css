@@ -1,0 +1,33 @@
+#nosotros {
+    text-align: center;
+}
+
+#nosotros .contenedor {
+    width: 480px;
+}
+
+.cont-info {
+    padding: 20px;
+}
+
+.info {
+    margin: 0 10px 20px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+#nosotros img {
+    width: 430px;
+}
+
+@media screen and (max-width:767px) {
+    #nosotros .contenedor {
+        width: 90%;
+    }
+
+    #nosotros img {
+        width: 90%;
+    }
+}
