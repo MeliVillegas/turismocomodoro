@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo Comodoro Rivadavia</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.38/dist/sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="fontello_css/fontello-cee07476/css/fontello.css">
-    <link rel="icon" href="./img/logo-modified.png">
+    <link rel="icon" href="./img/logo-modified.png">   
 </head>
-<body>
+<body onload="mostrarSaludo()">
     <header>
         <div class="contenedor">
             <a href="./index.html"><img src="img/logo1.png" alt="Logo"></a>
@@ -26,45 +29,67 @@
     </header>
     <main>
         <section id="banner">
-            <img src="img/banner.png" alt="">
+            <img src="img/banner.png" alt="Fotografia de Comodoro Rivadavia">
             <div class="contenedor">
                 <h2>BIENVENIDOS A COMORODO RIVADAVIA</h2>
                 <a href="./html/sobre_nosotros.html">Más info</a>
             </div>    
         </section>
+        <section id="clima">
+            <div class="contenedor">
+                <div class="imagen">
+                    <img src="" class="temp-img" id="temp-img" alt="Icono de temperatura"/>
+                </div>
+                <div id="info">
+                    <h2 id="temperatura" class="temperatura"></h2>
+                    <h2 id="descripcion" class="descripcion"></h2>
+                </div>
+            </div>
+        </section>
+        <script src="./js/main.js"></script>
         <section id="bienvenidos">
-            <h2>LA CIUDAD DEL VIENTO</h2>
-            <p>Comodoro Rivadavia, situada en las márgenes del Golfo San Jorge, es la ciudad más grande de la Patagonia Austral. Por su ubicación estratégica, su conectividad y su oferta de servicios, es la puerta de entrada a un gran abanico de atractivos; con modernos hoteles y establecimientos gastronómicos que brindan servicios de excelente calidad, agencias de viajes, tanto receptivas como emisivas, y un completo servicio de transportes terrestres y aéreos. Además, ofrece lugares de esparcimiento nocturno como casino, pubs y discotecas; también así, museos relacionados con la actividad petrolera y paleontológica, como diferentes atractivos turísticos.</p>
-
-            <p>Comodoro Rivadavia es el centro urbano y económico más importante de la Patagonia Central, rasgos que la constituyen en un excelente punto de recepción dentro de la Patagonia.</p>
-            
-            <p>El petróleo es su principal actividad económica y sus yacimientos de explotación abastecen un importante porcentaje del consumo nacional, por tal razón hoy es conocida como la Capital Nacional del Petróleo.</p>
+            <div class="contenedor">
+                <h2>LA CIUDAD DEL VIENTO</h2>
+                <p>Comodoro Rivadavia, situada en las márgenes del Golfo San Jorge, es la ciudad más grande de la Patagonia Austral. Por su ubicación estratégica, su conectividad y su oferta de servicios, es la puerta de entrada a un gran abanico de atractivos; con modernos hoteles y establecimientos gastronómicos que brindan servicios de excelente calidad, agencias de viajes, tanto receptivas como emisivas, y un completo servicio de transportes terrestres y aéreos. Además, ofrece lugares de esparcimiento nocturno como casino, pubs y discotecas; también así, museos relacionados con la actividad petrolera y paleontológica, como diferentes atractivos turísticos.</p>
+    
+                <p>Comodoro Rivadavia es el centro urbano y económico más importante de la Patagonia Central, rasgos que la constituyen en un excelente punto de recepción dentro de la Patagonia.</p>
+                
+                <p>El petróleo es su principal actividad económica y sus yacimientos de explotación abastecen un importante porcentaje del consumo nacional, por tal razón hoy es conocida como la Capital Nacional del Petróleo.</p>    
+            </div>
         </section>
         <section id="turismo">
             <h2>Turismo local</h2>
             <div class="contenedor">
-                <a class="turismo-seccion" href="./html/evento.html">
-                    <img src="img/ferroportuario-2.jpg" alt="">
-                    <h4>Museos y centros culturales</h4>
-                </a>
-                <a class="turismo-seccion" href="./html/evento.html">
-                    <img src="img/picada-de-mariscos-para.jpg" alt="">
+                <div class="turismo-seccion">
+                    <a href="./html/evento.html">
+                        <img src="img/ferroportuario-2.jpg" alt="Museos y cultura">
+                    </a>
+                    <h4>Museos y centros culturales</h4>    
+                </div>
+                <div class="turismo-seccion">
+                    <a href="./html/evento.html">
+                        <img src="img/picada-de-mariscos-para.jpg" alt="Gastronomía">
+                    </a> 
                     <h4>Gastronomía</h4>
-                </a>
-                <a class="turismo-seccion" href="./html/evento.html">
-                    <img src="img/costanera.jpg" alt="">
+                </div>
+                <div class="turismo-seccion" >
+                    <a href="./html/evento.html">
+                        <img src="img/costanera.jpg" alt="Playas">  
+                    </a>
                     <h4>Playas</h4>
-                </a>
-                <a class="turismo-seccion" href="./html/evento.html">
-                    <img src="img/parque-saavedra.jpg" alt="">
+                </div>
+                <div class="turismo-seccion">
+                    <a href="./html/evento.html">
+                        <img src="img/parque-saavedra.jpg" alt="Parques">                        
+                    </a>
                     <h4>Parques y campings</h4>
-                </a>
+                </div> 
             </div>
         </section>
         <section id="ubicacion">
             <h2>Mapa de la ciudad</h2>
             <div class="contenedor">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177902.33096858187!2d-67.64134548468508!3d-45.836809212563715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde4544de04824f5%3A0x5d9f7f8e3bb8ee4b!2sComodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1663615865306!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177902.33096858187!2d-67.64134548468508!3d-45.836809212563715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde4544de04824f5%3A0x5d9f7f8e3bb8ee4b!2sComodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1663615865306!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Comodoro Rivadavia - Google Maps"></iframe>
             </div>     
         </section>
     </main>
@@ -79,5 +104,7 @@
             </div>
         </div>
     </footer>
+    
 </body>
+
 </html>

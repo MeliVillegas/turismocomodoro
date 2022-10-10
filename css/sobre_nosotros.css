@@ -31,3 +31,23 @@ h4 {
         width: 90%;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    #nosotros .contenedor {
+        width: 70%;
+    }
+
+    #nosotros img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #nosotros .contenedor {
+        width: 50%;
+    }
+
+    #nosotros img {
+        width: 50%;
+    }
+}

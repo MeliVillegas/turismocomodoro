@@ -5,6 +5,7 @@
 @import url(login.css);
 @import url(sobre_nosotros.css);
 @import url(agenda.css);
+@import url(clima.css);
 
 * {
     margin: 0;
@@ -111,13 +112,18 @@ footer .contenedor {
 }
 
 @media (min-width:1024px) {
-    .contenedor {
-        width: 1000px;
+
+    #header .contenedor {
+        width: 50%;
+    }
+    .contenedor{
+        width: 1210px;
     }
 
-    #bienvenidos p {
-        margin: 0 150px;
+    #ubicacion iframe {
+        width: 1200px;
     }
+
 
 }
 

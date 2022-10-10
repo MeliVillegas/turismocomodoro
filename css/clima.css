@@ -1,0 +1,40 @@
+#clima {
+    text-align: center;
+}
+
+#clima .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: rgba(157, 197, 235, 0.37);
+}
+
+#clima .imagen {
+    padding-right: 0;
+    width: 30%;
+}
+
+#clima img{
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+
+#clima .temperatura {
+    font-size: 60px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#clima .descripcion {
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
