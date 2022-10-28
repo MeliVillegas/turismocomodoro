@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Cultural</title>
+    
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontello_css/fontello-cee07476/css/fontello.css">
     <link rel="icon" href="./img/logo-modified.png">
@@ -27,28 +29,7 @@
     <main>
         <section id="agenda">
             <h2>AGENDA CULTURAL</h2>
-            <div class="contenedor">
-                <a href="./evento.html" class="evento">
-                    <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
-                    <div class="informacion">
-                        <h4>Nuevo evento próximo disponible</h4>
-                        <p>Esperar actualizaciones sobre ubicación, fecha y hora del evento.</p>
-                    </div>    
-                </a>
-                <a href="./evento.html" class="evento">
-                    <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
-                    <div class="informacion">
-                        <h4>Nuevo evento próximo disponible</h4>
-                        <p>Esperar actualizaciones sobre ubicación, fecha y hora del evento.</p>
-                    </div>    
-                </a>
-                <a href="./evento.html" class="evento">
-                    <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
-                    <div class="informacion">
-                        <h4>Nuevo evento próximo disponible</h4>
-                        <p>Esperar actualizaciones sobre ubicación, fecha y hora del evento.</p>
-                    </div>    
-                </a>
+            <div class="contenedor" id="cont-eventos">
                 <a href="./evento.html" class="evento">
                     <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
                     <div class="informacion">
@@ -57,6 +38,7 @@
                     </div>    
                 </a>
             </div>
+            <a id="abrirModal">Agregar evento</a>
         </section>
     </main>
     <footer id="footer-1">
@@ -71,4 +53,7 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.38/dist/sweetalert2.all.min.js"></script>
+<script src="sweetalert2.min.js"></script>
+<script src="./../js/agenda.js"></script>
 </html>

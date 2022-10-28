@@ -1,7 +1,9 @@
+
+
 let nombreUsuario = prompt('Escriba su nombre, por favor')
 
 function mostrarSaludo(){
-
+  
   fecha = new Date(); 
   hora = fecha.getHours();
 
@@ -75,3 +77,4 @@ const temp = toCelsius(data.main.temp);
     }
    tempImg.src = src;
 }
+
