@@ -1,8 +1,8 @@
 window.onload = function(){
 var eventos = [];
 
-crearEvento('Feria','29-10-2022','Centro Cultural','Entrada libre y gratuita');
-crearEvento('Feria','29-10-2022','Centro Cultural','Entrada libre y gratuita');
+crearEvento('Feria de artesanos y diseñadores','sábado 05 y domingo 06 de noviembre','C.I.P','De 14hs a 20hs. Entrada libre y gratuita');
+crearEvento('Concierto de piano a 4 manos','sábado 05 de noviembre','Ceptur','A las 19hs. Entrada libre y gratuita');
 const cont = document.getElementById('cont-eventos');
 
 function crearEvento(titulo,fecha,ubi,desc){
@@ -31,9 +31,9 @@ function crearHtml(eventos){
         </a>`;    
     }
 }
-const btn = document.querySelector('#abrirModal')
+const btn = document.querySelector('#abrir')
 btn.addEventListener('click', function(){
-    abrirModal();
+    pedirClave();
 })
 function abrirModal(){
     Swal.fire({
@@ -59,5 +59,33 @@ function abrirModal(){
 
 }
 
-  
+function pedirClave(){
+    Swal.fire({
+        title: 'Autorización',
+        text: 'Ingrese clave para continuar',
+        html:
+          '<input id="swal-input" placeholder="Clave" class="swal2-input">',
+        focusConfirm: true,
+        showCancelButton: true,
+        preConfirm: () => {
+            validarClave();
+        }
+      })
+}
+
+function validarClave(){
+   var input = document.getElementById('swal-input').value;
+   clave = '7ur15m0'
+   if (input != clave) {
+    Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'La clave ingresada es incorrecta. Vuelva a intentarlo nuevamente.',
+        footer: '<p>¿No sos parte de nuestra comunidad?</p><a href="./../html/login.html">Registrate</a>'
+      })
+   }
+   else {
+    abrirModal();
+   }
+}
 }

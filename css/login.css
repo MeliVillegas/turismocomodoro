@@ -113,3 +113,40 @@ form {
     }
 
 }
+
+/*Actualizacion pendiente-Acceso Usuario*/
+
+#accesoUsuario {
+    text-align: center;
+    display: none;
+}
+
+#accesoUsuario img {
+    width: 400px;
+}
+
+#accesoUsuario .contenedor {
+    width: 400px;
+    padding: 0 20px;
+}
+
+#accesoUsuario p {
+    margin-bottom: 40px;
+}
+
+#accesoUsuario .btn-aceptar{
+    padding: 10px 15px;
+    background: #3B8BFB;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#accesoUsuario .btn-cerrarSesion{
+    padding: 10px 15px;
+    background: #fb3b3b;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+

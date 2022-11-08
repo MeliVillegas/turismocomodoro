@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fontello_css/fontello-cee07476/css/fontello.css">
     <link rel="icon" href="./img/logo-modified.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script  src="./../js/login.js"></script>
 </head>
 <body>
     <header>
@@ -25,21 +28,31 @@
         </div>
     </header>
     <main>
-        <section id="login">
+        <section id="login" class="login">
             <div class="contenedor">
                 <div class="cont-form">
                     <a href="#" class="op-activada">Registrarse </a>
                     <a href="iniciar_sesion.html" class="op-desactivada">Iniciar Sesión</a>
-                    <form action="./error.html">
+                    <form  id="usuario-form">
+                        <input type="hidden" name="contact_number">
                         <input type="text" name="nombre" required placeholder="Nombre" class="input-1">
                         <input type="text" name="apellido" required placeholder="Apellido" class="input-1">
                         <input type="email" name="correo" required placeholder="Correo electrónico" class="input-1">
                         <input type="password" name="contraseña" required   placeholder="Contraseña" class="input-1">
                         <br>
-                        <input type="submit" value="Ingresar" class="login-boton-1">
+                        <input type="submit" value="Registrarse" class="login-boton-1">
                     </form>
                 </div>
             </div>
+        </section>
+        <section id="accesoUsuario">
+            <img src="../img/comunidadd.png" alt="Ilustración de comunidad">
+            <div class="contenedor">
+                <h2>Proximamente...</h2>
+                <p>Nuevas actualizaciones para miembros de nuestra comunidad. Gracias por unirte a esta iniciativa.</p>
+            </div>
+            <a onclick="ocultarMostrar()" class="btn-cerrarSesion">Cerrar sesión</a>
+            <a href="javascript:history.back()" class="btn-aceptar">Aceptar</a>
         </section>
     </main>
     <footer id="footer-1">
@@ -54,4 +67,6 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.38/dist/sweetalert2.all.min.js"></script>
+<script src="sweetalert2.min.js"></script>
 </html>

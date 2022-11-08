@@ -1,36 +1,3 @@
-
-
-let nombreUsuario = prompt('Escriba su nombre, por favor')
-
-function mostrarSaludo(){
-  
-  fecha = new Date(); 
-  hora = fecha.getHours();
-
-  if(hora >= 0 && hora < 12){
-    texto = `Hola, Buenos días ${nombreUsuario}`;
-    imagen = "img/dia.png";
-  }
-
-  if(hora >= 12 && hora < 19){
-    texto = `Hola, Buenas tardes ${nombreUsuario}`;
-    imagen = "img/tarde.png";
-  }
-
-  if(hora >= 19 && hora < 24){
-    texto = `Hola, Buenas noches ${nombreUsuario}`;
-    imagen = "img/noche.png";
-  }
-
-  swal.fire({
-      imageUrl: imagen,
-      imageHeight: '200px',
-      title: texto, 
-      text:'Bienvenid@ a Turismo Comodoro',
-      confirmButtonText: 'Aceptar'
-  })
-}
-
 //Clima
 
 //Elementos que van a ser modificados
