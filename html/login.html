@@ -13,6 +13,9 @@
     <script  src="./../js/login.js"></script>
 </head>
 <body>
+    <div id="loading" class="loading">
+        <p>Cargando...</p>
+    </div>
     <header>
         <div class="contenedor">
             <a href="../index.html"><img src="../img/logo1.png" alt="Logo"></a>
@@ -27,7 +30,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main>  
         <section id="login" class="login">
             <div class="contenedor">
                 <div class="cont-form">
@@ -45,15 +48,17 @@
                 </div>
             </div>
         </section>
+
         <section id="accesoUsuario">
             <img src="../img/comunidadd.png" alt="Ilustración de comunidad">
             <div class="contenedor">
                 <h2>Proximamente...</h2>
                 <p>Nuevas actualizaciones para miembros de nuestra comunidad. Gracias por unirte a esta iniciativa.</p>
             </div>
-            <a onclick="ocultarMostrar()" class="btn-cerrarSesion">Cerrar sesión</a>
+            <a onclick="cerrarSesion()" class="btn-cerrarSesion">Cerrar sesión</a>
             <a href="javascript:history.back()" class="btn-aceptar">Aceptar</a>
         </section>
+
     </main>
     <footer id="footer-1">
         <div class="contenedor">

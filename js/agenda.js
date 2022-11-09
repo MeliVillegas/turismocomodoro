@@ -12,25 +12,12 @@ function crearEvento(titulo,fecha,ubi,desc){
         ubicacion: ubi,
         descripcion: desc
     };
+    // Cargamos el evento al array
     eventos.push(evento);
 }
 
 crearHtml(eventos);
 
-function crearHtml(eventos){
-    while (cont.firstChild) {
-        cont.removeChild(cont.firstChild);
-    }
-    for (let i = 0; i < eventos.length; i++) {
-        cont.innerHTML += `<a href="./evento.html" class="evento">
-        <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
-        <div class="informacion">
-            <h4>`+eventos[i].titulo+`</h4>
-            <p>El `+eventos[i].fecha+` en `+eventos[i].ubicacion+`. `+eventos[i].descripcion+`</p>
-        </div>    
-        </a>`;    
-    }
-}
 const btn = document.querySelector('#abrir')
 btn.addEventListener('click', function(){
     pedirClave();
@@ -87,5 +74,22 @@ function validarClave(){
    else {
     abrirModal();
    }
+}
+
+function crearHtml(eventos){
+    // Recorremos los hijos del contenedor de eventos en html
+    // Y todos los hijos encontrados los eliminamos
+    while (cont.firstChild) {
+        cont.removeChild(cont.firstChild);
+    }
+    for (let i = 0; i < eventos.length; i++) {
+        cont.innerHTML += `<a href="./evento.html" class="evento">
+        <img src="../img/calendario.jpg" alt="Ilustración de símbolo de calendario">
+        <div class="informacion">
+            <h4>`+eventos[i].titulo+`</h4>
+            <p>El `+eventos[i].fecha+` en `+eventos[i].ubicacion+`. `+eventos[i].descripcion+`</p>
+        </div>    
+        </a>`;    
+    }
 }
 }
