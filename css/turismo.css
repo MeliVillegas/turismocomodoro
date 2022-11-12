@@ -40,12 +40,15 @@
     margin: 8px;
     border: 1px solid #fff;
     border-radius: 20px;
-
+    transition: all 0.3s ease;
 }
 
 .seccionTurismo:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform:scale(1.5);
+    transform: scale(1.5);  
 }
+
 
 /*Secciones dentro de Gastronomía*/
 
@@ -114,11 +117,13 @@
 
     .restaurantes, .confiterias, .pizzerias, .parrillas, .mariscosSushi, .comidaRapida{
         width: 100%;
+        margin: 70px 0;
     }
 
     .contSecciones img {
         width: 40%;
         object-fit: cover;
+        margin: 0;
     }
 
     .contSecciones h4, .contSecciones a {
@@ -126,7 +131,7 @@
     }
 
     .contSecciones p {
-        font-size: 70%;
+        font-size: 60%;
     }
 
 }
