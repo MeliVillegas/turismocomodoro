@@ -38,10 +38,12 @@ function ocultarMostrar() {
     }
 }
 
+
 function checkLogin() {
     let isLogin = localStorage.getItem('login');
     if (isLogin) {
         ocultarMostrar();
+        iconoLogin();
     }
 }
 
@@ -58,4 +60,9 @@ function loadingScreen(isLoading) {
     else {
         loading.style.display = "none";
     }
+}
+
+function iconoLogin() {
+    let icono = document.getElementById('iconoLogin');
+    icono.innerHTML = `<img id="iconoDeLogin" src="../img/16363.png" alt="Ilustración de símbolo de calendario"></img>`
 }

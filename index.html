@@ -9,10 +9,11 @@
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="fontello_css/fontello-fafdeb26/css/icon-close.css">
-    <link rel="icon" href="./img/logo-modified.png">   
+    <link rel="stylesheet" href="./fontello_css/fontello/fontello-1a076fcf/css/fontello.css">
+    <link rel="icon" href="./img/logo-modified.png"> 
+    <script src="./js/carga.js"></script>
 </head>
-<body onload="mostrarSaludo()">
+<body onload="iconoLogin('pri')">
     <header>
         <div class="contenedor">
             <a href="./index.html"><img src="img/logo1.png" alt="Logo"></a>
@@ -22,11 +23,15 @@
                 <a href="#">Home</a>
                 <a href="./html/turismo.html">Turismo</a>
                 <a href="./html/agenda.html">Agenda</a>
-                <a href="./html/sobre_nosotros.html">Sobre Nosotros</a>
-                <a href="./html/login.html">Ingresar</a>
+                <a href="./html/sobre_nosotros.html" >Sobre Nosotros</a>
+                <a href="./html/login.html" id="iconoLogin">Ingresar</a>
             </nav>
         </div>
     </header>
+    <div id="loading" class="loading" >
+        <img src="" class="icon-spin4" alt="">
+        <p>Cargando...</p>
+    </div>
     <main>
         <section id="banner">
             <img src="img/banner.png" alt="Fotografia de Comodoro Rivadavia">
@@ -45,8 +50,8 @@
                     <h2 id="descripcion" class="descripcion"></h2>
                 </div>
             </div>
-        </section>
-        <script src="./js/main.js"></script>
+        </section onload="mostrarClima()">
+        <script src="./js/main.js"></script>  
         <section id="bienvenidos">
             <div class="contenedor">
                 <h2>LA CIUDAD DEL VIENTO</h2>
@@ -104,7 +109,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
-
 </html>

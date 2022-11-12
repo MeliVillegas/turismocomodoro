@@ -169,9 +169,13 @@ form {
     margin-top: 300px;
 }
 
+#iconoDeLogin {
+    width: 25px;
+}
+
 @media screen and (min-width:768px) {
     #accesoUsuario {
-        height: 100vh;
+        height: 160vh;
     }
     
     #accesoUsuario .contenedor {

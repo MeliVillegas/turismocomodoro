@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../fontello_css/fontello-cee07476/css/fontello.css">
-    <link rel="icon" href="../img/logo-modified.png">
+    <link rel="stylesheet" href="../fontello_css/fontello/fontello-1a076fcf/css/fontello.css">
+    <link rel="icon" href="../img/logo-modified.png"> 
 </head>
 <body>
+    
     <header>
         <div class="contenedor">
             <a href="../index.html"><img src="../img/logo1.png" alt="Logo"></a>
@@ -20,10 +21,14 @@
                 <a href="./turismo.html">Turismo</a>
                 <a href="./agenda.html">Agenda</a>
                 <a href="#">Sobre Nosotros</a>
-                <a href="./login.html">Ingresar</a>
+                <a href="./login.html" id="iconoLogin">Ingresar</a>
             </nav>
         </div>
     </header>
+    <div id="loading" class="loading">
+        <img src="" class="icon-spin4" alt="">
+        <p>Cargando...</p>
+    </div>
     <main>
         <section id="nosotros">
             <div class="contenedor">
@@ -54,5 +59,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/carga.js"></script>
 </body>
 </html>
