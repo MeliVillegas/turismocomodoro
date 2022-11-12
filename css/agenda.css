@@ -104,3 +104,9 @@
     }
 
 }
+
+@media screen and (min-width:767px) {
+    #actualizacion {
+        height: 120vh;
+    }
+}

@@ -1,3 +1,6 @@
+import isLoading() from './login.js';
+
+
 //Clima
 
 //Elementos que van a ser modificados
