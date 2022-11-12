@@ -109,16 +109,22 @@
 @media screen and (max-width:767px) {
 
     .turismo {
-        height: 140vh;
+        height: 160vh;
     } 
 
-    .contSecciones p,.contSecciones h4, .contSecciones a {
-        font-size: 90%;
+    .restaurantes, .confiterias, .pizzerias, .parrillas, .mariscosSushi, .comidaRapida{
+        width: 100%;
     }
 
-    .turismo {
-        min-height: 130vh;
+    .contSecciones img {
+        width: 40%;
+        object-fit: cover;
     }
+
+    .contSecciones p,.contSecciones h4, .contSecciones a {
+        font-size: 80%;
+    }
+
 }
 
 @media (min-width:1024px) {
