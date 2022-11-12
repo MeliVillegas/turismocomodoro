@@ -44,9 +44,10 @@
 }
 
 .seccionTurismo:hover {
-    -webkit-transform: scale(1.5);
-    -ms-transform:scale(1.5);
-    transform: scale(1.5);  
+    -webkit-transform: scale(1.1);
+    -ms-transform:scale(1.1);
+    transform: scale(1.1); 
+    background-color: #ECCB4B; 
 }
 
 
