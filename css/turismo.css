@@ -121,8 +121,12 @@
         object-fit: cover;
     }
 
-    .contSecciones p,.contSecciones h4, .contSecciones a {
+    .contSecciones h4, .contSecciones a {
         font-size: 80%;
+    }
+
+    .contSecciones p {
+        font-size: 70%;
     }
 
 }
