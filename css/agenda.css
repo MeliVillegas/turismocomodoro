@@ -1,11 +1,13 @@
 #agenda {
     text-align: center;
+    height: 80vh;
 }
 
 #agenda .contenedor {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 
 }
 
@@ -47,6 +49,7 @@
 
 #actualizacion {
     text-align: center;
+    height: 80vh;
 }
 #actualizacion img {
     width: 400px;

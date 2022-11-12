@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.turismo {
+    height: 60vh;
+}
+
 #turismo .contenedor {
     display: flex;
     justify-content: center;
@@ -15,15 +19,107 @@
     border-radius: 20px;
 }
 
-#turismo img {
+#turismo .seccImg {
     width: 280px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
 }
 
+
 /*Secciones Turismo*/
 
+/*Gastronomia*/
+
+.seccionTurismo {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    padding: 30px 20px;
+    margin: 8px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+}
+
+.seccionTurismo:hover {
+    transform: scale(1.5);
+}
+
+/*Secciones dentro de Gastronomía*/
+
+.contSecciones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.restaurantes, .confiterias, .pizzerias, .parrillas, .mariscosSushi, .comidaRapida{
+    justify-content: center;
+    margin: 70px 40px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 150px;
+}
+
+.local {
+    display: flex;
+    background-color: rgba(223, 221, 221, 0.76);
+    border-radius: 20px;
+    margin: 0 0 10px 10px;
+    color: #000;
+}
+
+.infoLocal {
+    text-align: left;
+}
+
+.local h4 {
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+}
+
+.local p {
+    padding: 0 40px 10px 20px;
+}
+
+.local img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.infoLocal a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;   
+}
+
+.infoLocal a:hover {
+    color: rgb(184, 127, 6);
+}
+
+.confiterias, .pizzerias, .parrillas, .mariscosSushi, .comidaRapida {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+
+    .turismo {
+        height: 100vh;
+    } 
+
+    .contSecciones p,.contSecciones h4, .contSecciones a {
+        font-size: 90%;
+    }
+
+    .turismo {
+        min-height: 130vh;
+    }
+}
 
 @media (min-width:1024px) {
     #turismo .contenedor {
@@ -33,4 +129,21 @@
     #bienvenidos p {
         margin: 0 150px;
     }
+}
+
+
+@media (max-width:1024px) {
+
+    .contSecciones {
+        width: 100%;
+    }
+
+    .restaurantes, .confiterias, .pizzerias, .parrillas, .mariscosSushi, .comidaRapida{
+        width: 80%;
+    }
+
+    .turismo {
+        min-height: 90vh;
+    }
+
 }

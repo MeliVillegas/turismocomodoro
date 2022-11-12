@@ -68,23 +68,19 @@ section {
 #ubicacion iframe {
     width: 70%;
     border-radius: 20px;
+    margin-bottom: 100px;
 }
 
 
 /*Footer*/
 
 footer {
-    width: 100%;
-    border-top: 1px solid #000;
-    border-radius: 20px 20px;
-}
-
-#footer-1 {
-    width: 100%;
-    border-top: 1px solid #000;
-    border-radius: 20px 20px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-radius: 20px 20px;
+    background-color: #fff;
 }
 
 footer .contenedor {
