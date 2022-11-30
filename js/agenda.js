@@ -48,9 +48,10 @@ function abrirModal(){
 function pedirClave(){
     Swal.fire({
         title: 'Autorización',
-        text: 'Ingrese clave para continuar',
         html:
+          '<p>Ingrese clave de socio para continuar</p>'+
           '<input id="swal-input" placeholder="Clave" class="swal2-input">',
+        footer: '<p>¿No sos parte de nuestra comunidad?</p><a href="./../html/login.html">Registrate</a>',
         focusConfirm: true,
         showCancelButton: true,
         preConfirm: () => {

@@ -6,8 +6,6 @@ function ocultarMostrar(a) {
     let sectionComidaRapida = document.getElementById('comidaRapida');
     let sectionConfiteria = document.getElementById('confiteria');
     let opcion = a
-    console.log(a);
-    console.log(opcion);
 
     if (opcion === 'pizzeria') {
         sectionResto.style.display = "none"
@@ -58,6 +56,6 @@ function ocultarMostrar(a) {
         sectionConfiteria.style.display = "none"
     }
     else {
-        console.log('no funciona')
+        console.log('Error')
     }
 }
